@@ -26,7 +26,9 @@ class App extends Component {
 
 const mapStateToProps = state => ({
   friends: state.friends,
-  fetchingFriends: state.fetchingFriends
+  fetchingFriends: state.fetchingFriends,
+  postSuccessMessage: state.postSuccessMessage,
+  postError: state.postError
 })
 
 export default connect(
